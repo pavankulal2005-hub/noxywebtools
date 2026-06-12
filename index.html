@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NoxyWebTools – 100+ AI Tools, Web Tools & Productivity Resources</title>
+<meta name="description" content="NoxyWebTools – Discover 100+ best AI Tools, Web Tools, Developer Resources, Google Tools, Learning Platforms and Productivity Apps in one premium place." />
+<meta name="keywords" content="AI Tools, ChatGPT, Gemini, Canva, GitHub, Web Tools, Developer Tools, Productivity Tools, Online Learning, Free AI Tools, NoxyWebTools" />
+<meta name="author" content="Pavan" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://noxywebprime.netlify.app/" />
+<!-- Open Graph -->
+<meta property="og:title" content="NoxyWebTools – 100+ AI Tools & Web Resources" />
+<meta property="og:description" content="Discover the Best AI Tools, Web Tools, Productivity Apps, Learning Platforms and Developer Resources in One Place." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://noxywebprime.netlify.app/" />
+<meta property="og:image" content="https://noxywebprime.netlify.app/og-image.png" />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="NoxyWebTools – 100+ AI Tools & Web Resources" />
+<meta name="twitter:description" content="The Ultimate Hub of AI Tools, Web Tools, and Productivity Resources." />
+<meta name="twitter:image" content="https://noxywebprime.netlify.app/og-image.png" />
+<!-- Theme -->
+<meta name="theme-color" content="#ffffff" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9A%80%3C/text%3E%3C/svg%3E" />
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"NoxyWebTools",
+  "url":"https://noxywebprime.netlify.app/",
+  "description":"Discover 100+ AI Tools, Web Tools, Developer Resources, Google Tools, Learning Platforms and Productivity Apps."
+}
+</script>
+<style>
+/* ============ RESET ============ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:'Inter',system-ui,sans-serif;background:linear-gradient(180deg,#fcfdff 0%,#f7f9ff 100%);color:var(--text);overflow-x:hidden;transition:background .4s ease,color .4s ease;cursor:none}
+body::before{content:'';position:fixed;inset:0;z-index:-5;background:radial-gradient(circle at top left,rgba(74,103,255,.12),transparent 20%),radial-gradient(circle at bottom right,rgba(255,92,150,.1),transparent 18%);pointer-events:none}
+.loader{position:fixed;inset:0;z-index:10010;display:flex;align-items:center;justify-content:center;padding:0 24px;background:radial-gradient(circle at center,rgba(255,255,255,.98),rgba(239,243,255,.98));backdrop-filter:blur(28px);overflow:hidden;transition:opacity .5s ease,visibility .5s ease}
+.loader::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,rgba(255,255,255,.4),transparent 45%),radial-gradient(circle at 12% 17%,rgba(0,119,255,.16),transparent 0 18%),radial-gradient(circle at 84% 22%,rgba(124,58,237,.16),transparent 0 16%);opacity:.95;pointer-events:none}
+.loader.hidden{opacity:0;visibility:hidden;pointer-events:none}
+.loader-inner{position:relative;z-index:1;max-width:720px;width:100%;text-align:center;display:grid;gap:18px}
+.loader-badge{font-size:.78rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);opacity:.9}
+.loader-logo{width:96px;height:96px;margin:0 auto;border-radius:28px;background:linear-gradient(135deg,rgba(255,255,255,.96),rgba(228,236,255,.98));border:1px solid rgba(0,0,0,.08);box-shadow:0 30px 90px rgba(74,103,255,.14);display:grid;place-items:center;font-size:2.4rem;color:var(--accent)}
+.loader-title{font-family:'Space Grotesk',sans-serif;font-size:clamp(2.2rem,4vw,3.4rem);font-weight:900;line-height:1.05;margin:0;letter-spacing:-.04em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.loader-text{color:var(--muted);font-size:1rem;line-height:1.75;max-width:580px;margin:0 auto}
+.loader-ring{position:relative;width:192px;height:192px;margin:0 auto}
+.loader-ring::before,.loader-ring::after{content:'';position:absolute;inset:0;border-radius:50%;border:4px solid rgba(0,119,255,.14)}
+.loader-ring::after{transform:rotate(45deg);border-color:rgba(124,58,237,.12)}
+.loader-dot{position:absolute;top:0;left:50%;width:18px;height:18px;margin-left:-9px;border-radius:50%;background:var(--accent);box-shadow:0 0 24px rgba(0,119,255,.28);animation:spinDot 1.4s linear infinite}
+.loader-dot:nth-child(2){animation-delay:.25s}
+.loader-dot:nth-child(3){animation-delay:.5s}
+.loader-dot:nth-child(4){animation-delay:.75s}
+.loader-bar{width:100%;max-width:460px;height:14px;border-radius:999px;background:rgba(0,0,0,.06);overflow:hidden;margin:0 auto;box-shadow:0 20px 60px rgba(74,103,255,.08)}
+.loader-progress{height:100%;width:0;background:var(--grad);border-radius:999px;animation:loaderFill 4s ease forwards}
+@keyframes spinDot{0%{transform:rotate(0deg) translateX(86px) rotate(0deg)}100%{transform:rotate(360deg) translateX(86px) rotate(-360deg)}}
+@keyframes loaderFill{0%{width:0}100%{width:100%}}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:none;border:none;background:none;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+/* ============ THEME ============ */
+:root[data-theme="light"]{
+  --bg:#ffffff;
+  --bg-2:#f7f8fb;
+  --card:#f5f5f7;
+  --card-2:rgba(0,0,0,.03);
+  --border:rgba(0,0,0,.08);
+  --text:#111111;
+  --muted:#555a63;
+  --accent:#0077ff;
+  --accent-2:#7c3aed;
+  --glow:0 0 30px rgba(0,119,255,.25);
+  --grad:linear-gradient(135deg,#0077ff 0%,#7c3aed 50%,#ff3ea5 100%);
+  --glass:rgba(255,255,255,.55);
+}
+
+/* ============ BACKGROUND ============ */
+.bg-orb{position:fixed;inset:0;z-index:-3;overflow:hidden;pointer-events:none}
+.bg-orb::before,.bg-orb::after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;filter:blur(120px);opacity:.4;animation:float 14s ease-in-out infinite}
+.bg-orb::before{background:var(--accent);top:-120px;left:-120px}
+.bg-orb::after{background:var(--accent-2);bottom:-160px;right:-140px;animation-delay:-7s}
+@keyframes float{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(60px,-40px) scale(1.1)}}
+.grid-bg{position:fixed;inset:0;z-index:-2;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at center,#000 30%,transparent 70%);opacity:.18;pointer-events:none}
+.bg-3d{position:fixed;inset:0;z-index:-1;pointer-events:none}
+.bg-3d span{position:absolute;border-radius:34px;background:rgba(74,103,255,.12);filter:blur(1px);mix-blend-mode:screen;animation:drift 22s ease-in-out infinite}
+.bg-3d span:nth-child(1){width:260px;height:260px;top:8%;left:10%}
+.bg-3d span:nth-child(2){width:180px;height:180px;top:24%;right:8%;background:rgba(255,92,150,.12);animation-duration:26s;animation-delay:-5s}
+.bg-3d span:nth-child(3){width:300px;height:300px;bottom:8%;left:12%;background:rgba(138,76,255,.1);animation-duration:24s;animation-delay:-3s}
+@keyframes drift{0%,100%{transform:translate(0,0) rotate(0deg)}50%{transform:translate(32px,-22px) rotate(18deg)}}
+
+/* particles */
+.particles{position:fixed;inset:0;z-index:-1;pointer-events:none}
+.particle{position:absolute;width:4px;height:4px;border-radius:50%;background:var(--accent);opacity:.5;animation:rise linear infinite}
+@keyframes rise{0%{transform:translateY(100vh) scale(.5);opacity:0}10%{opacity:.7}100%{transform:translateY(-10vh) scale(1);opacity:0}}
+
+/* ============ CURSOR ============ */
+.cursor,.cursor-dot{position:fixed;top:0;left:0;pointer-events:none;z-index:9999;border-radius:50%;transform:translate(-50%,-50%);transition:width .25s,height .25s,background .25s}
+.cursor{width:34px;height:34px;border:1.5px solid var(--accent);box-shadow:var(--glow);mix-blend-mode:difference}
+.cursor-dot{width:6px;height:6px;background:var(--accent);box-shadow:var(--glow)}
+.cursor.hover{width:60px;height:60px;background:rgba(0,229,255,.1)}
+@media(hover:none){.cursor,.cursor-dot{display:none}body,a,button{cursor:auto}}
+
+/* ============ HEADER ============ */
+.header{position:sticky;top:0;z-index:100;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);background:var(--glass);border-bottom:1px solid var(--border)}
+.nav{max-width:1280px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.25rem;display:flex;align-items:center;gap:8px}
+.logo b{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nav ul{display:flex;gap:28px;list-style:none}
+.nav ul a{font-size:.92rem;color:var(--muted);font-weight:500;transition:color .2s;position:relative}
+.nav ul a:hover{color:var(--text)}
+.nav ul a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--grad);transition:width .3s}
+.nav ul a:hover::after{width:100%}
+.nav-right{display:flex;align-items:center;gap:10px}
+.icon-btn{width:40px;height:40px;border-radius:12px;background:var(--card-2);border:1px solid var(--border);display:grid;place-items:center;transition:transform .2s,background .2s}
+.icon-btn:hover{transform:translateY(-2px);background:var(--card)}
+.menu-btn{display:none}
+@media(max-width:860px){
+  .nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--bg-2);padding:20px;border-bottom:1px solid var(--border)}
+  .nav ul.open{display:flex}
+  .menu-btn{display:grid}
+}
+
+/* ============ HERO ============ */
+.hero{padding:90px 24px 80px;text-align:center;max-width:1100px;margin:0 auto;position:relative;background:rgba(255,255,255,.92);border:1px solid var(--border);border-radius:32px;box-shadow:0 40px 120px rgba(86,106,245,.08);backdrop-filter:blur(20px)}
+.badge{display:inline-flex;align-items:center;gap:10px;padding:10px 18px;border-radius:999px;background:rgba(255,255,255,.85);border:1px solid var(--border);font-size:.88rem;color:var(--muted);margin-bottom:24px;backdrop-filter:blur(12px)}
+.badge .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 16px rgba(74,103,255,.18);animation:pulseText 1.4s infinite}
+.hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(3rem,7vw,6rem);font-weight:900;line-height:1.02;letter-spacing:-.04em;margin-bottom:24px}
+.hero h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% 200%;animation:gradMove 6s ease infinite}
+@keyframes gradMove{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}
+.hero p{color:var(--muted);font-size:clamp(1rem,1.4vw,1.1rem);max-width:760px;margin:0 auto 36px;line-height:1.7}
+.cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{position:relative;display:inline-flex;align-items:center;gap:10px;padding:14px 28px;border-radius:16px;font-weight:700;font-size:.95rem;transition:transform .25s,box-shadow .25s;overflow:hidden}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:var(--glow)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 16px 50px rgba(74,103,255,.22)}
+.btn-ghost{background:var(--card-2);border:1px solid var(--border);color:var(--text)}
+.btn-ghost:hover{transform:translateY(-3px);border-color:var(--accent)}
+.hero-visual{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;align-items:center;margin-top:48px;min-height:240px}
+.hero-visual .shape{width:112px;height:112px;border-radius:28px;background:rgba(255,255,255,.8);border:1px solid rgba(255,255,255,.9);box-shadow:0 28px 60px rgba(34,60,120,.06);backdrop-filter:blur(18px);position:relative;transform-style:preserve-3d;animation:float3d 14s ease-in-out infinite}
+.hero-visual .shape:before{content:'';position:absolute;inset:14px;border-radius:18px;background:linear-gradient(135deg,rgba(74,103,255,.18),rgba(255,91,150,.16));}
+.hero-visual .shape:nth-child(2){width:145px;height:145px;animation-duration:11s}
+.hero-visual .shape:nth-child(3){width:96px;height:96px;animation-duration:13s}
+.hero-visual .shape:nth-child(4){width:130px;height:130px;animation-duration:10s}
+@keyframes float3d{0%,100%{transform:translateY(0) rotateX(18deg) rotateY(18deg)}50%{transform:translateY(-20px) rotateX(28deg) rotateY(-18deg)}}
+.ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.4);transform:scale(0);animation:ripple .6s linear;pointer-events:none}
+@keyframes ripple{to{transform:scale(4);opacity:0}}
+
+/* ============ STATS ============ */
+.stats{max-width:1100px;margin:60px auto;padding:0 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat{padding:28px 20px;border-radius:20px;background:var(--card);border:1px solid var(--border);text-align:center;backdrop-filter:blur(10px);transition:transform .3s,border-color .3s}
+.stat:hover{transform:translateY(-4px);border-color:var(--accent)}
+.stat .num{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat .lbl{color:var(--muted);font-size:.88rem;margin-top:6px}
+@media(max-width:680px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+/* ============ SEARCH + FILTERS ============ */
+.tools-section{max-width:1280px;margin:40px auto;padding:0 24px}
+.section-title{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:700;margin-bottom:8px;letter-spacing:-.02em}
+.section-sub{color:var(--muted);margin-bottom:28px}
+.search-wrap{position:relative;max-width:680px;margin:0 auto 28px}
+.search{width:100%;padding:16px 20px 16px 52px;border-radius:16px;background:var(--card);border:1px solid var(--border);color:var(--text);font-size:1rem;transition:border-color .25s,box-shadow .25s;backdrop-filter:blur(10px)}
+.search:focus{outline:none;border-color:var(--accent);box-shadow:var(--glow)}
+.search-wrap svg{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:36px}
+.chip{padding:8px 16px;border-radius:999px;background:var(--card);border:1px solid var(--border);font-size:.85rem;color:var(--muted);transition:all .2s}
+.chip:hover{color:var(--text);transform:translateY(-2px)}
+.chip.active{background:var(--grad);color:#fff;border-color:transparent;box-shadow:var(--glow)}
+
+/* ============ CARDS ============ */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+.card{display:block;position:relative;padding:24px;border-radius:24px;background:var(--card);border:1px solid var(--border);transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .25s,box-shadow .35s;overflow:hidden;opacity:0;transform:translateY(24px);text-decoration:none}
+.card.in{opacity:1;transform:translateY(0)}
+.card::before{content:"";position:absolute;inset:0;background:var(--grad);opacity:0;transition:opacity .4s;border-radius:24px;z-index:0}
+.card:hover{transform:translateY(-8px);border-color:transparent;box-shadow:0 28px 70px rgba(74,103,255,.12),var(--glow)}
+.card:hover::before{opacity:.08}
+.card>*{position:relative;z-index:1}
+.tool-head{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.tool-ico{width:54px;height:54px;border-radius:18px;background:var(--card-2);border:1px solid var(--border);display:grid;place-items:center;flex-shrink:0;overflow:hidden;position:relative;box-shadow:0 14px 40px rgba(74,103,255,.08)}
+.tool-ico img{width:100%;height:100%;object-fit:contain;display:block}
+.tool-ico .tool-fallback{position:absolute;inset:0;display:grid;place-items:center;font-size:1rem;font-weight:700;color:var(--text);background:var(--card-2)}
+.tool-name{font-weight:700;font-size:1.08rem}
+.tool-cat{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:2px}
+.tool-desc{color:var(--muted);font-size:.95rem;line-height:1.65;margin-bottom:18px;min-height:58px}
+.tool-link{display:inline-flex;align-items:center;gap:8px;font-size:.92rem;font-weight:700;color:var(--accent);transition:gap .2s}
+.tool-link:hover{gap:12px}
+.empty{text-align:center;padding:60px 20px;color:var(--muted);grid-column:1/-1}
+
+/* ============ CONTACT ============ */
+.contact{max-width:1100px;margin:80px auto;padding:0 24px}
+.contact-wrap{display:grid;grid-template-columns:1fr;gap:18px;margin-top:28px}
+.contact-info{display:grid;gap:16px}
+.contact-card{padding:26px;border-radius:24px;background:var(--card);border:1px solid var(--border);transition:transform .3s,border-color .3s;display:grid;gap:12px}
+.contact-card:hover{transform:translateY(-4px);border-color:var(--accent)}
+.contact-card .lbl{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px}
+.contact-card a,.contact-card span{font-weight:600;font-size:1rem;word-break:break-word;color:var(--text)}
+/* ============ FOOTER ============ */
+footer{margin-top:80px;border-top:1px solid var(--border);padding:48px 24px 28px;background:var(--bg-2)}
+.foot{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px}
+.foot h4{font-family:'Space Grotesk',sans-serif;margin-bottom:14px;font-size:1rem}
+.foot ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.foot a{color:var(--muted);font-size:.9rem;transition:color .2s}
+.foot a:hover{color:var(--accent)}
+.socials{display:flex;gap:10px;margin-top:10px}
+.socials a{width:38px;height:38px;border-radius:10px;background:var(--card);border:1px solid var(--border);display:grid;place-items:center;transition:all .25s}
+.socials a:hover{background:var(--grad);color:#fff;transform:translateY(-3px)}
+.copyright{text-align:center;color:var(--muted);font-size:.85rem;margin-top:32px;padding-top:20px;border-top:1px solid var(--border)}
+@media(max-width:680px){.foot{grid-template-columns:1fr}}
+
+/* ============ BACK TO TOP ============ */
+.top-btn{position:fixed;bottom:24px;right:24px;width:48px;height:48px;border-radius:14px;background:var(--grad);color:#fff;display:grid;place-items:center;box-shadow:var(--glow);opacity:0;transform:translateY(20px);transition:all .3s;z-index:90;pointer-events:none}
+.top-btn.show{opacity:1;transform:translateY(0);pointer-events:auto}
+.top-btn:hover{transform:translateY(-4px)}
+
+/* ============ REVEAL ============ */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <span class="loader-badge">NoxyWebTools</span>
+    <div class="loader-logo">⏳</div>
+    <h1 class="loader-title">Launching your premium toolkit</h1>
+    <p class="loader-text"> Please wait while NoxyWebTools prepares the best experience.</p>
+    <div class="loader-ring" aria-hidden="true">
+      <span class="loader-dot"></span>
+      <span class="loader-dot"></span>
+      <span class="loader-dot"></span>
+      <span class="loader-dot"></span>
+    </div>
+    <div class="loader-bar"><div class="loader-progress"></div></div>
+  </div>
+</div>
+
+<!-- Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- BG -->
+<div class="bg-orb"></div>
+<div class="grid-bg"></div>
+<div class="bg-3d" aria-hidden="true"><span></span><span></span><span></span></div>
+<div class="particles" id="particles"></div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="nav">
+    <a href="#" class="logo">🤖<b>NoxyWebTools</b></a>
+    <ul id="navList">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#tools">AI Tools</a></li>
+      <li><a href="#tools">Categories</a></li>
+      <li><a href="#search">Search</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="badge"><span class="dot"></span> 100+ Premium Tools curated for you</div>
+  <h1>Noxy<span>WebTools</span></h1>
+  <p>Discover the Best AI Tools, Web Tools, Productivity Apps, Learning Platforms and Developer Resources in One Place.</p>
+  <div class="cta">
+    <a href="#tools" class="btn btn-primary">Explore Tools →</a>
+    <a href="https://noxywebprime.netlify.app" target="_blank" rel="noopener" class="btn btn-ghost">Visit Website</a>
+  </div>
+  <div class="hero-visual" aria-hidden="true">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats reveal">
+  <div class="stat"><div class="num" data-count="50">0+</div><div class="lbl">AI Tools</div></div>
+  <div class="stat"><div class="num" data-count="10">0+</div><div class="lbl">Categories</div></div>
+  <div class="stat"><div class="num" data-count="100">0K+</div><div class="lbl">Visitors</div></div>
+  <div class="stat"><div class="num">24/7</div><div class="lbl">Available</div></div>
+</section>
+
+<!-- TOOLS -->
+<section class="tools-section" id="tools">
+  <div class="reveal" id="search">
+    <h2 class="section-title">Explore the Toolverse</h2>
+    <p class="section-sub">Search, filter and discover the best tools by category.</p>
+    <div class="search-wrap">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="text" id="searchInput" class="search" placeholder="Search AI Tools, Websites, Learning Platforms..." />
+    </div>
+    <div class="chips" id="chips"></div>
+  </div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact reveal" id="contact">
+  <h2 class="section-title">Get in Touch</h2>
+  <p class="section-sub">Reach out directly across email and phone — no form required.</p>
+  <div class="contact-wrap">
+    <div class="contact-info">
+      <div class="contact-card"><div class="lbl">Phone</div><a href="tel:+917829671246">+91 7829671246</a></div>
+      <div class="contact-card"><div class="lbl">Email</div><a href="mailto:noxywebprime@gmail.com">noxywebprime@gmail.com</a></div>
+      <div class="contact-card"><div class="lbl">Live Support</div><span>Mon–Fri · 9am–8pm IST</span></div>
+      <div class="contact-card"><div class="lbl">Website</div><a href="https://noxywebprime.netlify.app" target="_blank" rel="noopener">noxywebprime.netlify.app</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot">
+    <div>
+      <h4>🚀 NoxyWebTools</h4>
+      <p style="color:var(--muted);font-size:.9rem;line-height:1.6;max-width:380px">The ultimate hub of AI tools, web tools, productivity apps and developer resources — all in one premium place.</p>
+      <div class="socials">
+        <a href="https://instagram.com/noxywebprime" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="https://youtube.com/@noxywebprime" target="_blank" rel="noopener" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+        <a href="mailto:noxywebprime@gmail.com" aria-label="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tools">Categories</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#tools">AI Tools</a></li>
+        <li><a href="#tools">Dev Tools</a></li>
+        <li><a href="#tools">Learning</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="copyright">© 2026 NoxyWebTools. All Rights Reserved. Made with ❤️ by Pavan</p>
+</footer>
+
+<button class="top-btn" id="topBtn" aria-label="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script>
+/* ============ DATA ============ */
+const TOOLS = [
+  // AI Tools
+  {n:"ChatGPT",c:"AI Tools",u:"https://chatgpt.com",d:"Conversational AI assistant by OpenAI."},
+  {n:"Gemini",c:"AI Tools",u:"https://gemini.google.com",d:"Google's multimodal AI model."},
+  {n:"Claude AI",c:"AI Tools",u:"https://claude.ai",d:"Anthropic's helpful & safe AI assistant."},
+  {n:"DeepSeek",c:"AI Tools",u:"https://deepseek.com",d:"Open-source reasoning AI model."},
+  {n:"Blackbox AI",c:"AI Tools",u:"https://www.blackbox.ai",d:"AI coding copilot & assistant."},
+  {n:"Perplexity",c:"AI Tools",u:"https://perplexity.ai",d:"AI-powered answer engine with sources."},
+  {n:"AI Studio",c:"AI Tools",u:"https://aistudio.google.com",d:"Google AI Studio for Gemini models."},
+  {n:"Kling AI",c:"AI Tools",u:"https://klingai.com",d:"Next-gen AI video generation platform."},
+  {n:"Gamma",c:"AI Tools",u:"https://gamma.app",d:"Create AI-powered presentations & decks."},
+  {n:"Tome",c:"AI Tools",u:"https://tome.app",d:"Generative storytelling & presentations."},
+  {n:"Beautiful.ai",c:"AI Tools",u:"https://www.beautiful.ai",d:"AI presentation maker for teams."},
+  {n:"Lovable",c:"AI Tools",u:"https://lovable.dev",d:"Build full-stack apps with AI."},
+  {n:"Stitch Beta",c:"AI Tools",u:"https://stitch.withgoogle.com",d:"Google's AI UI design tool."},
+  // Design
+  {n:"Canva",c:"Design Tools",u:"https://www.canva.com",d:"All-in-one online design platform."},
+  {n:"Piktochart",c:"Design Tools",u:"https://piktochart.com",d:"Infographics, posters & visual stories."},
+  {n:"Remove.bg",c:"Design Tools",u:"https://www.remove.bg",d:"Instantly remove image backgrounds."},
+  {n:"Photopea",c:"Design Tools",u:"https://www.photopea.com",d:"Free online Photoshop alternative."},
+  {n:"Sticker AI",c:"Design Tools",u:"https://stickerbaker.com",d:"Generate fun AI stickers in seconds."},
+  // Developer
+  {n:"GitHub",c:"Developer Tools",u:"https://github.com",d:"Host & collaborate on code repositories."},
+  {n:"GitHub Copilot",c:"Developer Tools",u:"https://github.com/features/copilot",d:"Your AI pair programmer."},
+  {n:"Netlify",c:"Developer Tools",u:"https://netlify.com",d:"Deploy modern web apps instantly."},
+  {n:"Vercel",c:"Developer Tools",u:"https://vercel.com",d:"Frontend cloud for Next.js & more."},
+  {n:"Jira",c:"Developer Tools",u:"https://www.atlassian.com/software/jira",d:"Agile project management for teams."},
+  {n:"WordPress",c:"Developer Tools",u:"https://wordpress.org",d:"World's most popular CMS platform."},
+  {n:"Hostinger",c:"Developer Tools",u:"https://hostinger.com",d:"Fast & affordable web hosting."},
+  // Google
+  {n:"Google",c:"Google Tools",u:"https://google.com",d:"The world's leading search engine."},
+  {n:"Gmail",c:"Google Tools",u:"https://mail.google.com",d:"Fast, smart & secure email by Google."},
+  {n:"Google Drive",c:"Google Tools",u:"https://drive.google.com",d:"Cloud storage & file sharing."},
+  {n:"Google Docs",c:"Google Tools",u:"https://docs.google.com",d:"Collaborative online documents."},
+  {n:"Google Sheets",c:"Google Tools",u:"https://sheets.google.com",d:"Online spreadsheets & data tools."},
+  {n:"Google Slides",c:"Google Tools",u:"https://slides.google.com",d:"Create stunning presentations."},
+  {n:"Google Forms",c:"Google Tools",u:"https://forms.google.com",d:"Build surveys & forms easily."},
+  {n:"Google Maps",c:"Google Tools",u:"https://maps.google.com",d:"Find places & directions worldwide."},
+  {n:"Google Translate",c:"Google Tools",u:"https://translate.google.com",d:"Translate text across 100+ languages."},
+  {n:"Google Search Console",c:"Google Tools",u:"https://search.google.com/search-console",d:"Monitor your site's search performance."},
+  // Social
+  {n:"YouTube",c:"Social Platforms",u:"https://youtube.com",d:"Watch & share videos with the world."},
+  {n:"Instagram",c:"Social Platforms",u:"https://instagram.com",d:"Photo & video social network."},
+  {n:"WhatsApp",c:"Social Platforms",u:"https://web.whatsapp.com",d:"Simple, secure messaging app."},
+  {n:"Telegram",c:"Social Platforms",u:"https://web.telegram.org",d:"Cloud-based messaging with privacy."},
+  {n:"LinkedIn",c:"Social Platforms",u:"https://linkedin.com",d:"Professional networking platform."},
+  {n:"Zoom",c:"Social Platforms",u:"https://zoom.us",d:"Reliable video meetings & webinars."},
+  {n:"Spotify",c:"Social Platforms",u:"https://spotify.com",d:"Stream millions of songs & podcasts."},
+  // Learning
+  {n:"Coursera",c:"Learning Platforms",u:"https://coursera.org",d:"World-class online courses & degrees."},
+  {n:"Infosys Springboard",c:"Learning Platforms",u:"https://infyspringboard.onwingspan.com",d:"Free learning by Infosys."},
+  {n:"Simplilearn",c:"Learning Platforms",u:"https://www.simplilearn.com",d:"Bootcamps & certification programs."},
+  {n:"Udemy",c:"Learning Platforms",u:"https://udemy.com",d:"Learn anything, anytime, anywhere."},
+  {n:"W3Schools",c:"Learning Platforms",u:"https://w3schools.com",d:"Learn web development for free."},
+  // PDF
+  {n:"Smallpdf",c:"PDF Tools",u:"https://smallpdf.com",d:"All-in-one PDF tools online."},
+  {n:"iLovePDF",c:"PDF Tools",u:"https://www.ilovepdf.com",d:"Edit, merge & convert PDFs easily."},
+  // Shopping
+  {n:"Amazon",c:"Shopping",u:"https://amazon.com",d:"Shop millions of products online."},
+  {n:"Flipkart",c:"Shopping",u:"https://www.flipkart.com",d:"India's leading online marketplace."}
+];
+
+const CATS = ["All", ...new Set(TOOLS.map(t=>t.c))];
+
+/* ============ RENDER ============ */
+const grid = document.getElementById('grid');
+const chips = document.getElementById('chips');
+const search = document.getElementById('searchInput');
+let activeCat = "All";
+let query = "";
+
+function initials(name){return name.split(/\s+/).map(w=>w[0]).slice(0,2).join('').toUpperCase()}
+const LOGO_OVERRIDES = {
+  chatgpt:'https://img.icons8.com/color/256/chatgpt.png',
+  gemini:'https://upload.wikimedia.org/wikipedia/commons/4/4a/Google_2015_logo.svg',
+  claudeai:'https://upload.wikimedia.org/wikipedia/commons/b/b8/Anthropic_Logo_%28Blue%29.svg',
+  deepseek:'https://deepseek.com/favicon.ico',
+  blackboxai:'https://www.blackbox.ai/apple-touch-icon.png',
+  perplexity:'https://www.perplexity.ai/favicon.ico',
+  aistudio:'https://aistudio.google.com/favicon.ico',
+  klingai:'https://klingai.com/favicon.ico',
+  gamma:'https://gamma.app/favicon.png',
+  tome:'https://tome.app/favicon.ico',
+  beautifulai:'https://www.beautiful.ai/favicon.ico',
+  lovable:'https://lovable.dev/favicon.ico',
+  stitchbeta:'https://stitch.withgoogle.com/favicon.ico',
+  canva:'https://upload.wikimedia.org/wikipedia/commons/e/e5/Canva_Logo.png',
+  piktochart:'https://upload.wikimedia.org/wikipedia/commons/2/2e/Piktochart_Logo.png',
+  removebg:'https://upload.wikimedia.org/wikipedia/commons/2/29/RemoveBG_logo.svg',
+  photopea:'https://www.photopea.com/icon.png',
+  stickerai:'https://stickerbaker.com/favicon.ico',
+  github:'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
+  githubcopilot:'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
+  netlify:'https://www.netlify.com/v3/img/components/logomark.png',
+  vercel:'https://upload.wikimedia.org/wikipedia/commons/0/08/Vercel_logo.svg',
+  jira:'https://upload.wikimedia.org/wikipedia/commons/8/8e/Jira_Logo.svg',
+  wordpress:'https://s.w.org/about/images/logos/wordpress-logo-notext-white.svg',
+  hostinger:'https://upload.wikimedia.org/wikipedia/commons/2/26/Hostinger_logo.svg',
+  google:'https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg',
+  gmail:'https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png',
+  googledrive:'https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png',
+  googledocs:'https://upload.wikimedia.org/wikipedia/commons/4/4a/Google_Docs_icon.svg',
+  googlesheets:'https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_Sheets_2020_Logo.svg',
+  googleslides:'https://upload.wikimedia.org/wikipedia/commons/7/74/Google_Slides_2020_Logo.svg',
+  googleforms:'https://upload.wikimedia.org/wikipedia/commons/2/2d/Google_Forms_2020_Logo.svg',
+  googlemaps:'https://upload.wikimedia.org/wikipedia/commons/2/2b/Google_Maps_Logo_2020.svg',
+  googletranslate:'https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_Translate_logo.png',
+  googlesearchconsole:'https://upload.wikimedia.org/wikipedia/commons/a/a6/Google_Search_Console_icon.png',
+  youtube:'https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg',
+  instagram:'https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg',
+  whatsapp:'https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg',
+  telegram:'https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg',
+  linkedin:'https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png',
+  zoom:'https://upload.wikimedia.org/wikipedia/commons/d/d8/Zoom_Communications_Logo.svg',
+  spotify:'https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg',
+  coursera:'https://upload.wikimedia.org/wikipedia/commons/6/62/Coursera_logo.svg',
+  infosysspringboard:'https://upload.wikimedia.org/wikipedia/commons/8/81/Infosys_Logo.svg',
+  simplilearn:'https://upload.wikimedia.org/wikipedia/commons/1/12/Simplilearn_Logo.svg',
+  udemy:'https://upload.wikimedia.org/wikipedia/commons/e/e4/Udemy_logo.svg',
+  w3schools:'https://www.w3schools.com/images/w3schools_logo_436_2.png',
+  smallpdf:'https://upload.wikimedia.org/wikipedia/commons/4/4a/Smallpdf_Logo.svg',
+  ilovepdf:'https://upload.wikimedia.org/wikipedia/commons/0/0a/ILovePDF_logo.svg',
+  amazon:'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg',
+  flipkart:'https://upload.wikimedia.org/wikipedia/commons/2/29/Flipkart_logo.svg',
+};
+function logoUrl(url,name){const key=name.toLowerCase().replace(/[^a-z0-9]+/g,'');if(LOGO_OVERRIDES[key])return LOGO_OVERRIDES[key];try{return 'https://logo.clearbit.com/'+new URL(url).hostname.replace(/^www\./,'')+'?size=128'}catch{return ''}}
+
+function renderChips(){
+  chips.innerHTML = CATS.map(c=>`<button class="chip ${c===activeCat?'active':''}" data-c="${c}">${c}</button>`).join('');
+  chips.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{activeCat=b.dataset.c;renderChips();renderTools()}));
+}
+
+function renderTools(){
+  const q = query.trim().toLowerCase();
+  const list = TOOLS.filter(t=>{
+    const matchCat = activeCat==="All" || t.c===activeCat;
+    const matchQ = !q || t.n.toLowerCase().includes(q) || t.c.toLowerCase().includes(q) || t.d.toLowerCase().includes(q);
+    return matchCat && matchQ;
+  });
+  if(!list.length){grid.innerHTML='<div class="empty">No tools found. Try another search.</div>';return}
+  grid.innerHTML = list.map(t=>`
+    <a class="card" href="${t.u}" target="_blank" rel="noopener noreferrer">
+      <div class="tool-head">
+        <div class="tool-ico"><img src="${logoUrl(t.u,t.n)}" alt="${t.n} logo" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'"><span class="tool-fallback">${initials(t.n)}</span></div>
+        <div>
+          <div class="tool-name">${t.n}</div>
+          <div class="tool-cat">${t.c}</div>
+        </div>
+      </div>
+      <p class="tool-desc">${t.d}</p>
+      <div class="tool-link">Open →</div>
+    </a>`).join('');
+  requestAnimationFrame(()=>{
+    grid.querySelectorAll('.card').forEach((c,i)=>setTimeout(()=>c.classList.add('in'), i*30));
+  });
+}
+
+renderChips();
+renderTools();
+search.addEventListener('input',e=>{query=e.target.value;renderTools()});
+
+/* ============ LOADER ============ */
+const loader = document.getElementById('loader');
+window.addEventListener('load',()=>setTimeout(()=>loader.classList.add('hidden'),4000));
+
+/* ============ MENU ============ */
+document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('navList').classList.toggle('open'));
+document.querySelectorAll('#navList a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navList').classList.remove('open')));
+
+/* ============ CURSOR ============ */
+const cur=document.getElementById('cursor'),dot=document.getElementById('cursorDot');
+let mx=0,my=0,cx=0,cy=0;
+window.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px'});
+function animCur(){cx+=(mx-cx)*.18;cy+=(my-cy)*.18;cur.style.left=cx+'px';cur.style.top=cy+'px';requestAnimationFrame(animCur)}
+animCur();
+document.addEventListener('mouseover',e=>{if(e.target.closest('a,button,.card,.chip,input')) cur.classList.add('hover'); else cur.classList.remove('hover')});
+
+/* ============ RIPPLE ============ */
+document.addEventListener('click',e=>{
+  const t=e.target.closest('.btn');if(!t)return;
+  const r=document.createElement('span');r.className='ripple';
+  const rect=t.getBoundingClientRect();const s=Math.max(rect.width,rect.height);
+  r.style.width=r.style.height=s+'px';r.style.left=(e.clientX-rect.left-s/2)+'px';r.style.top=(e.clientY-rect.top-s/2)+'px';
+  t.appendChild(r);setTimeout(()=>r.remove(),600);
+});
+
+/* ============ REVEAL ============ */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* ============ COUNTERS ============ */
+const cio=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;
+  const el=e.target;const target=+el.dataset.count;const suffix=el.textContent.replace(/[0-9]/g,'');
+  let cur=0;const step=Math.max(1,Math.ceil(target/40));
+  const t=setInterval(()=>{cur+=step;if(cur>=target){cur=target;clearInterval(t)}el.textContent=cur+suffix},30);
+  cio.unobserve(el);
+}),{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+
+/* ============ BACK TO TOP ============ */
+const topBtn=document.getElementById('topBtn');
+window.addEventListener('scroll',()=>{topBtn.classList.toggle('show',scrollY>500)});
+topBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+/* ============ PARTICLES ============ */
+const pc=document.getElementById('particles');
+for(let i=0;i<28;i++){const p=document.createElement('span');p.className='particle';
+  p.style.left=Math.random()*100+'vw';p.style.animationDuration=(8+Math.random()*10)+'s';
+  p.style.animationDelay=(-Math.random()*10)+'s';p.style.opacity=(.2+Math.random()*.5);
+  p.style.transform=`scale(${.4+Math.random()*1.2})`;pc.appendChild(p);}
+
+</script>
+</body>
+</html>
